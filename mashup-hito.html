@@ -156,7 +156,12 @@
 		</script>
 		<script type="text/x-template" id="home-component">
 			<div>
+				<div class="row">
+					<kpi-l-component idKPI="kpi1"></kpi-l-component>
+					<kpi-l-component idKPI="kpi2"></kpi-l-component>
+				</div>
 				<h3>Home</h3>
+
 			</div>
 		</script>
 		<script type="text/x-template" id="saldos-component">
@@ -164,8 +169,25 @@
 				<h3>Saldos</h3>
 			</div>
 		</script>
+		<script type="text/x-template" id="kpi-l-component">
+			<div>
+				<div class="col s12 m6 l6">
+					<div class="card blue-grey lighten-5">
+						<div class="card-content black-text">
+							<span class="card-title">Gráfica Ejemplo</span>
+							<div v-bind:id="idKPI" class="qvplaceholder"></div>
+						</div>
+						<div class="card-action">
+							<a href="#">This is a link</a>
+							<a href="#">This is a link</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</script>
 		<!--//-->
 		<!--Vue JS mis componentes-->
+		<script src="js/components/all-vue-component.js" charset="utf-8"></script>
 		<script src="js/components/router-vue-component.js" charset="utf-8"></script>
 		<script src="js/components/app-vue-component.js" charset="utf-8"></script>
 		<!--//-->

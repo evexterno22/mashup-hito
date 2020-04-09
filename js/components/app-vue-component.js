@@ -9,6 +9,11 @@ Vue.component('main-component',{
   template:'#main-component'
 });
 
+Vue.component('footer-component',{
+  template:'#footer-component'
+});
+
+
 var mashupVue = new Vue({
   router
 

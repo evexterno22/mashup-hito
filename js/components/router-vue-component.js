@@ -1,7 +1,6 @@
 Vue.component('home-component',{
   template:'#home-component'
 });
-
 Vue.component('saldos-component',{
   template:'#saldos-component'
 });
