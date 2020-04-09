@@ -56,8 +56,9 @@
 				<div id="QV06" class="qvplaceholder"></div>
 				</div>
 			</main>
-			<!---->
+			<!-- -->
 		</div>
+		<!--//-->
 
 
 		<!--Vue JS v2.6.11 -->
@@ -71,45 +72,47 @@
 		<!-- Materialize JS v1.0.0-->
 		<script src="js/materialize-1-0-0.min.js" charset="utf-8"></script>
 		<!--//-->
+
 		<!--Vue Templates-->
 		<script type="text/x-template" id="header-component">
 			<div>
 				<header>
-					<!--Menú 2--->
-					<div class="navbar-fixed">
-						<nav>
-						<!-- navbar content here  -->
-							<div class="nav-wrapper blue-grey darken-4">
-								<div class="row">
-									<div class="col s12">
-										<a href="#" data-target="slide-out" class="left sidenav-trigger hide-on-medium-and-up"><i class="material-icons">menu</i></a>
-									</div>
-								</div>
-							</div>
-						</nav>
-					</div>
-					<!-- sidenav content here  -->
-					<ul id="slide-out" class="sidenav sidenav-fixed">
+				  <!--Menú 2--->
+				  <div class="navbar-fixed">
+					<nav>
+					<!-- navbar content here  -->
+					  <div class="nav-wrapper blue-grey darken-4">
+						<div class="row">
+						  <div class="col s12">
+							<a href="#" data-target="slide-out" class="left sidenav-trigger hide-on-medium-and-up"><i class="material-icons">menu</i></a>
+						  </div>
+						</div>
+					  </div>
+					</nav>
+				  </div>
+				  <!-- sidenav content here  -->
+				  <ul id="slide-out" class="sidenav sidenav-fixed">
 						<li>
-							<div class="user-view">
-								<div class="background">
-									<img src="img/hito-logo.png">
-								</div>
-								<a href="#user"><img class="circle" src="img/user.png"></a>
-								<a href="#name"><span class="black-text name">John Doe</span></a>
-								<a href="#email"><span class="black-text email">jdandturk@gmail.com</span></a>
+						  <div class="user-view">
+							<div class="background">
+							  <img src="img/hito-logo.png">
 							</div>
+							<a href="#user"><img class="circle" src="img/user.png"></a>
+							<a href="#name"><span class="black-text name">John Doe</span></a>
+							<a href="#email"><span class="black-text email">jdandturk@gmail.com</span></a>
+						  </div>
 						</li>
-						<li><a href="#!"><i class="material-icons">cloud</i>Nube</a></li>
-						<li><a href="#!">Dashboard</a></li>
+						<li><div class="divider"></div></li>
+						<li><router-link to="/"><i class="material-icons">home</i> Home</router-link></li>
+						<li><router-link to="/saldos">Saldos </router-link></li>
 						<li><div class="divider"></div></li>
 						<li><a class="subheader">Más opciones...</a></li>
 						<li><a class="waves-effect" href="#!">Primer opción</a></li>
 						<li><a href="#"><i class="material-icons">exit_to_app</i>Salir</a></li>
-					</ul>
-					<!--//-->
+				  </ul>
+				  <!--//-->
 				</header>
-			</div>
+			  </div>
 		</script>
 		<script type="text/x-template" id="main-component">
 			<div>
@@ -118,10 +121,6 @@
 					<div class="container">
 						<h1>Hola app!</h1>
 						<p>
-
-							<router-link to="/home">Home </router-link>
-							<router-link to="/saldos">Saldos </router-link>
-
 						</p>
 
 						<router-view></router-view>
@@ -157,10 +156,9 @@
 		<script type="text/x-template" id="home-component">
 			<div>
 				<div class="row">
-					<kpi-l-component v-for="kpi in listKPI" v-bind:kpi="kpi" v-bind:key="kpi.id"></kpi-l-component>
+					<kpi-l-component v-for="kpi in rowLargeKPI1" v-bind:kpi="kpi" v-bind:key="kpi.id"></kpi-l-component>
 				</div>
 				<h3>Home</h3>
-
 			</div>
 		</script>
 		<script type="text/x-template" id="saldos-component">
@@ -195,14 +193,10 @@
 		<!--Mis JS-->
 		<script src="js/scripts.js" charset="utf-8"></script>
 		<!--//-->
-
 		<!--Qlik JS importante-->
 		<script src="../../resources/assets/external/requirejs/require.js"></script>
 		<script src="mashup-hito.js"></script>
 		<!--//-->
 
-
-
-
-
-</body></html>
+	</body>
+</html>

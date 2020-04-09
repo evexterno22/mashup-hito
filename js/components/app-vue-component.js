@@ -11,8 +11,12 @@ Vue.component('footer-component',{
   template:'#footer-component'
 });
 
+document.addEventListener("qlik-cargado", () => {
 
-var mashupVue = new Vue({
-  router
+	window.mashupVue = new Vue({
+    router
+  }).$mount('#mashup-vue');
+  let evento = new Event("vue-cargado");
 
-}).$mount('#mashup-vue');
+	document.dispatchEvent(evento);
+})
