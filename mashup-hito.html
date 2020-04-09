@@ -26,68 +26,11 @@
 
 	</head>
 	<body>
-		<header>
-			<!--Menú 2--->
-			<div class="navbar-fixed">
-				<nav>
-				<!-- navbar content here  -->
-					<div class="nav-wrapper blue-grey darken-4">
-						<div class="row">
-							<div class="col s12">
-								<a href="#" data-target="slide-out" class="left sidenav-trigger hide-on-medium-and-up"><i class="material-icons">menu</i></a>
-							</div>
-						</div>
-					</div>
-				</nav>
-			</div>
-			<!-- sidenav content here  -->
-			<ul id="slide-out" class="sidenav sidenav-fixed">
-				<li>
-					<div class="user-view">
-						<div class="background">
-							<img src="img/hito-logo.png">
-						</div>
-						<a href="#user"><img class="circle" src="img/user.png"></a>
-						<a href="#name"><span class="black-text name">John Doe</span></a>
-						<a href="#email"><span class="black-text email">jdandturk@gmail.com</span></a>
-					</div>
-				</li>
-				<li><a href="#!"><i class="material-icons">cloud</i>Nube</a></li>
-				<li><a href="#!">Dashboard</a></li>
-				<li><div class="divider"></div></li>
-				<li><a class="subheader">Más opciones...</a></li>
-				<li><a class="waves-effect" href="#!">Primer opción</a></li>
-				<li><a href="#"><i class="material-icons">exit_to_app</i>Salir</a></li>
-			</ul>
-			<!--//-->
-		</header>
-		<main>
-			<div class="container">
-				<div class="row">
-					<div class="col s12 m6 l6">
-						<div id="QV01" class="qvobject"></div>
-					</div>
-					<div class="col s6">
-						<div id="QV02" class="qvplaceholder"></div>
-					</div>
-				</div>
-				<div id="QV03" class="qvplaceholder"></div>
-				<div id="QV04" class="qvplaceholder"></div>
-				<div id="QV05" class="qvplaceholder"></div>
-				<div id="QV06" class="qvplaceholder"></div>
-			</div>
-		</main>
-		<footer>
-
-		</footer>
-
-
-		<!--Error Popup-->
-		<div id="popup">
-			<button type="button" class="close" data-dismiss="modal" aria-label="Close" id="closePopup"><span aria-hidden="true">×</span></button>
-			<p id="popupText"></p>
+		<div id="mashup-vue" class="">
+			<header-component></header-component>
+			<main-component></main-component>
 		</div>
-		<!--//-->
+
 
 		<!--Vue JS v2.6.11 -->
 		<script src="js/vue-2-6-11.js"></script>
@@ -100,10 +43,103 @@
 		<!-- Materialize JS v1.0.0-->
 		<script src="js/materialize-1-0-0.min.js" charset="utf-8"></script>
 		<!--//-->
+		<!--Vue Templates-->
+		<script type="text/x-template" id="header-component">
+			<div>
+				<header>
+					<!--Menú 2--->
+					<div class="navbar-fixed">
+						<nav>
+						<!-- navbar content here  -->
+							<div class="nav-wrapper blue-grey darken-4">
+								<div class="row">
+									<div class="col s12">
+										<a href="#" data-target="slide-out" class="left sidenav-trigger hide-on-medium-and-up"><i class="material-icons">menu</i></a>
+									</div>
+								</div>
+							</div>
+						</nav>
+					</div>
+					<!-- sidenav content here  -->
+					<ul id="slide-out" class="sidenav sidenav-fixed">
+						<li>
+							<div class="user-view">
+								<div class="background">
+									<img src="img/hito-logo.png">
+								</div>
+								<a href="#user"><img class="circle" src="img/user.png"></a>
+								<a href="#name"><span class="black-text name">John Doe</span></a>
+								<a href="#email"><span class="black-text email">jdandturk@gmail.com</span></a>
+							</div>
+						</li>
+						<li><a href="#!"><i class="material-icons">cloud</i>Nube</a></li>
+						<li><a href="#!">Dashboard</a></li>
+						<li><div class="divider"></div></li>
+						<li><a class="subheader">Más opciones...</a></li>
+						<li><a class="waves-effect" href="#!">Primer opción</a></li>
+						<li><a href="#"><i class="material-icons">exit_to_app</i>Salir</a></li>
+					</ul>
+					<!--//-->
+				</header>
+			</div>
+		</script>
+		<script type="text/x-template" id="main-component">
+			<div>
+				<main>
+					<div class="container">
+						<h1>Hola app!</h1>
+						<p>
 
+							<router-link to="/home">Home </router-link>
+							<router-link to="/saldos">Saldos </router-link>
+
+						</p>
+
+						<router-view></router-view>
+						<div class="row">
+							<div class="col s12 m6 l6">
+								<div id="QV01" class="qvplaceholder"></div>
+							</div>
+							<div class="col s6">
+								<div id="QV02" class="qvplaceholder"></div>
+							</div>
+						</div>
+						<div id="QV03" class="qvplaceholder"></div>
+						<div id="QV04" class="qvplaceholder"></div>
+						<div id="QV05" class="qvplaceholder"></div>
+						<div id="QV06" class="qvplaceholder"></div>
+					</div>
+				</main>
+			</div>
+		</script>
+		<script type="text/x-template" id="footer-component">
+			<div>
+				<footer>
+					<!--Error Popup-->
+					<div id="popup">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close" id="closePopup"><span aria-hidden="true">×</span></button>
+						<p id="popupText"></p>
+					</div>
+					<!--//-->
+				</footer>
+			</div>
+		</script>
+		<script type="text/x-template" id="home-component">
+			<div>
+				<h3>Home</h3>
+			</div>
+		</script>
+		<script type="text/x-template" id="saldos-component">
+			<div>
+				<h3>Saldos</h3>
+			</div>
+		</script>
+		<!--//-->
 		<!--Vue JS mis componentes-->
+		<script src="js/components/router-vue-component.js" charset="utf-8"></script>
 		<script src="js/components/app-vue-component.js" charset="utf-8"></script>
 		<!--//-->
+
 
 		<!--Mis JS-->
 		<script src="js/scripts.js" charset="utf-8"></script>
@@ -113,6 +149,7 @@
 		<script src="../../resources/assets/external/requirejs/require.js"></script>
 		<script src="mashup-hito.js"></script>
 		<!--//-->
+
 
 
 
