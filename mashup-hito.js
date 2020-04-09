@@ -27,13 +27,13 @@ require( ["js/qlik"], function ( qlik ) {
 
 	//callbacks -- inserted here --
 	//open apps -- inserted here --
-	var app = qlik.openApp('Testexterno.qvf', config);
-	var app1 = qlik.openApp('Sales Discovery.qvf', config);
+	var app = qlik.openApp('Sales Discovery.qvf', config);
 
 
 	//get objects -- inserted here --
+	app.getObject('QV01','jhTmTRy');
 	
-	
+
 	
 	
 	//create cubes and lists -- inserted here --
