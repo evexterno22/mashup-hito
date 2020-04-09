@@ -1,4 +1,4 @@
 Vue.component('kpi-l-component',{
-  props:['idKPI'],
+  props:['kpi'],
   template:'#kpi-l-component'
 });

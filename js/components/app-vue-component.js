@@ -1,5 +1,3 @@
-
-
 Vue.component('header-component',{
   template:'#header-component'
 
