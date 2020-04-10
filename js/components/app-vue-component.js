@@ -1,22 +1,21 @@
-Vue.component('header-component',{
+let headerComponent ={
   template:'#header-component'
-
-});
-
-Vue.component('main-component',{
+};
+let mainComponent={
   template:'#main-component'
-});
-
-Vue.component('footer-component',{
+};
+let footerComponent={
   template:'#footer-component'
-});
-
+};
 document.addEventListener("qlik-cargado", () => {
-
 	window.mashupVue = new Vue({
-    router
+    router: router,
+    components:{
+      'header-component': headerComponent,
+      'main-component': mainComponent,
+      'footer-component': footerComponent
+    }
   }).$mount('#mashup-vue');
   let evento = new Event("vue-cargado");
-
 	document.dispatchEvent(evento);
 })
