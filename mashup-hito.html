@@ -1,5 +1,6 @@
 <!doctype html>
-<html><head>
+<html>
+	<head>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<title>Qlik Sense Mashup</title>
 		<meta charset="utf-8">
@@ -22,8 +23,6 @@
 		<!--Mis CSS-->
 		<link rel="stylesheet" href="css/styles.css">
 		<!--//-->
-
-
 	</head>
 	<body>
 		<div id="mashup-vue" class="">
@@ -85,11 +84,24 @@
 						<div class="row">
 						  <div class="col s12">
 							<a href="#" data-target="slide-out" class="left sidenav-trigger hide-on-medium-and-up"><i class="material-icons">menu</i></a>
+							<ul class="left ">
+								<li><a href="sass.html">Sass</a></li>
+								<li><a href="badges.html">Components</a></li>
+								<!-- Dropdown Trigger -->
+								<li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+							  </ul>
 						  </div>
 						</div>
 					  </div>
 					</nav>
 				  </div>
+				  <!--Drop down content here-->
+				  <ul id="dropdown1" class="dropdown-content">
+					<li><a href="#!">one</a></li>
+					<li><a href="#!">two</a></li>
+					<li class="divider"></li>
+					<li><a href="#!">three</a></li>
+				  </ul>
 				  <!-- sidenav content here  -->
 				  <ul id="slide-out" class="sidenav sidenav-fixed">
 						<li>
@@ -119,23 +131,7 @@
 				<!---->
 				<main>
 					<div class="container">
-						<h1>Hola app!</h1>
-						<p>
-						</p>
-
 						<router-view></router-view>
-						<div class="row">
-						<div class="col s12 m6 l6">
-							<div id="QV01" class="qvplaceholder"></div>
-						</div>
-						<div class="col s6">
-							<div id="QV02" class="qvplaceholder"></div>
-						</div>
-					</div>
-					<div id="QV03" class="qvplaceholder"></div>
-					<div id="QV04" class="qvplaceholder"></div>
-					<div id="QV05" class="qvplaceholder"></div>
-					<div id="QV06" class="qvplaceholder"></div>
 					</div>
 				</main>
 				<!---->
@@ -155,10 +151,22 @@
 		</script>
 		<script type="text/x-template" id="home-component">
 			<div>
-				<div class="row">
-					<kpi-l-component v-for="kpi in rowLargeKPI1" v-bind:kpi="kpi" v-bind:key="kpi.id"></kpi-l-component>
-				</div>
 				<h3>Home</h3>
+				<div class="row">
+					<kpi-xl-component v-for="kpi in rowXLargeKPI1" v-bind:kpi="kpi" v-bind:key="kpi.key"></kpi-xl-component>
+				</div>
+				<div class="row">
+					<kpi-l-component v-for="kpi in rowLargeKPI1" v-bind:kpi="kpi" v-bind:key="kpi.key"></kpi-l-component>
+				</div>
+				<div class="row">
+					<kpi-m-component v-for="kpi in rowMediumKPI1" v-bind:kpi="kpi" v-bind:key="kpi.key"></kpi-m-component>
+				</div>
+				<div class="row">
+					<kpi-s-component v-for="kpi in rowSmallKPI1" v-bind:kpi="kpi" v-bind:key="kpi.key"></kpi-s-component>
+				</div>
+				<div class="row">
+					<kpi-xs-component v-for="kpi in rowXSmallKPI1" v-bind:kpi="kpi" v-bind:key="kpi.key"></kpi-xs-component>
+				</div>
 			</div>
 		</script>
 		<script type="text/x-template" id="saldos-component">
@@ -166,17 +174,76 @@
 				<h3>Saldos</h3>
 			</div>
 		</script>
-		<script type="text/x-template" id="kpi-l-component">
+		<script type="text/x-template" id="kpi-xl-component">
 			<div>
-				<div class="col s12 m6 l6">
-					<div class="card blue-grey lighten-5">
+				<div class="col s12 m12 l12">
+					<div class="card grey lighten-5">
 						<div class="card-content black-text">
 							<span class="card-title">{{kpi.title}}</span>
-							<div v-bind:id="'kpi'+kpi.url+kpi.id" class="qvplaceholder"></div>
+							<div v-bind:id="kpi.id+kpi.key" class="qvplaceholder kpi-xl-component"></div>
 						</div>
-						<div class="card-action">
-							<a href="#">This is a link</a>
-							<a href="#">This is a link</a>
+						<div class="card-action light-green">
+							<span>Puede ser un titulo o un filtro</span>							
+						</div>
+					</div>
+				</div>
+			</div>
+		</script>
+		<script type="text/x-template" id="kpi-l-component">
+			<div>
+				<div class="col s12 m12 l12">
+					<div class="card grey lighten-5">
+						<div class="card-content black-text">
+							<span class="card-title">{{kpi.title}}</span>
+							<div v-bind:id="kpi.id+kpi.key" class="qvplaceholder kpi-l-component"></div>
+						</div>
+						<div class="card-action light-green">
+							<span>Puede ser un titulo o un filtro</span>							
+						</div>
+					</div>
+				</div>
+			</div>
+		</script>
+		<script type="text/x-template" id="kpi-m-component">
+			<div>
+				<div class="col s12 m6 l6">
+					<div class="card grey lighten-5">
+						<div class="card-content black-text">
+							<span class="card-title">{{kpi.title}}</span>
+							<div v-bind:id="kpi.id+kpi.key" class="qvplaceholder kpi-m-component"></div>
+						</div>
+						<div class="card-action light-green">
+							<span>Puede ser un titulo o un filtro</span>							
+						</div>
+					</div>
+				</div>
+			</div>
+		</script>
+		<script type="text/x-template" id="kpi-s-component">
+			<div>
+				<div class="col s12 m6 l4">
+					<div class="card grey lighten-5">
+						<div class="card-content black-text">
+							<span class="card-title">{{kpi.title}}</span>
+							<div v-bind:id="kpi.id+kpi.key" class="qvplaceholder kpi-s-component"></div>
+						</div>
+						<div class="card-action light-green">
+							<span>Puede ser un titulo o un filtro</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</script>
+		<script type="text/x-template" id="kpi-xs-component">
+			<div>
+				<div class="col s6 m4 l3">
+					<div class="card grey lighten-5">
+						<div class="card-content black-text">
+							<span class="card-title">{{kpi.title}}</span>
+							<div v-bind:id="kpi.id+kpi.key" class="qvplaceholder kpi-xs-component"></div>
+						</div>
+						<div class="card-action light-green">
+							<span>Puede ser un titulo o un filtro</span>
 						</div>
 					</div>
 				</div>
