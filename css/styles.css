@@ -12,20 +12,37 @@ header, main, footer {
 .background img {
   width: 23em;
 }
-.kpi-xl-component{
+.kpi-xl{
 	height: 500px;
 }
-.kpi-l-component{
+.kpi-l{
 	height: 300px;
 }
-.kpi-m-component{
+.kpi-m{
 	height: 300px;
 }
-.kpi-s-component{
+.kpi-s{
 	height: 300px;
 }
-.kpi-xs-component{
+.kpi-xs{
 	height: 200px;
+}
+@media only screen and (min-width: 601px)
+main >.container, body>.page-footer>.container, .top-nav>.container, #index-banner>.container {
+    width: 100%;
+}
+@media only screen and (min-width: 993px)
+.container {
+    width: 70%;
+}
+@media only screen and (min-width: 601px)
+.container {
+    width: 85%;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 90%;
 }
 /*
 .qvplaceholder, .qvobject {

@@ -1,23 +1,16 @@
-Vue.component('kpi-xl-component',{
-  props:['kpi'],
-  template:'#kpi-xl-component'
-});
 
-Vue.component('kpi-l-component',{
+Vue.component('kpi-component',{
   props:['kpi'],
-  template:'#kpi-l-component'
-});
-
-Vue.component('kpi-m-component',{
-  props:['kpi'],
-  template:'#kpi-m-component'
-});
-
-Vue.component('kpi-s-component',{
-  props:['kpi'],
-  template:'#kpi-s-component'
-});
-Vue.component('kpi-xs-component',{
-  props:['kpi'],
-  template:'#kpi-xs-component'
+  template:'#kpi-component',
+  mounted() {
+    window.appQlik.getObject(this.kpi.id+this.kpi.key,this.kpi.qlik);
+  },
+  methods:{
+    download(){
+      alert("hola mundo");
+      window.appQlik.getObject(this.kpi.qlik).then(model => {
+        window.appQlik.table(model).exportData({'format':'CSV_C','state':'A','filename': 'exportdata.csv','download': true});
+      });
+    }
+  }
 });
