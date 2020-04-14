@@ -12,6 +12,9 @@ header, main, footer {
 .background img {
   width: 8em;
 }
+.logo-nav{
+	width: 3.4em;
+}
 .sidenav{
 	width: 100px;
 }
@@ -33,6 +36,12 @@ i.small {
 .kpi-xs{
 	height: 300px;
 }
+.kpi-xs-matriz{
+	height: 50px;
+}
+.kpi-xs-home{
+	height: 25px;
+}
 @media only screen and (min-width: 601px)
 main >.container, body>.page-footer>.container, .top-nav>.container, #index-banner>.container {
     width: 90%;
@@ -49,6 +58,9 @@ main >.container, body>.page-footer>.container, .top-nav>.container, #index-bann
     margin: 0 auto;
     max-width: 1920px;
     width: 95%;
+}
+.card .card-action {
+	padding: 5px 5px;
 }
 /*
 .qvplaceholder, .qvobject {
