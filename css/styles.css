@@ -19,19 +19,19 @@ i.small {
     font-size: 3rem;
 }
 .kpi-xl{
-	height: 500px;
+	height: 600px;
 }
 .kpi-l{
-	height: 300px;
+	height: 500px;
 }
 .kpi-m{
-	height: 300px;
+	height: 400px;
 }
 .kpi-s{
 	height: 300px;
 }
 .kpi-xs{
-	height: 200px;
+	height: 300px;
 }
 @media only screen and (min-width: 601px)
 main >.container, body>.page-footer>.container, .top-nav>.container, #index-banner>.container {

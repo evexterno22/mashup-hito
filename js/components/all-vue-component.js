@@ -6,7 +6,7 @@ Vue.component('kpi-component',{
   },
   methods:{
     download(){
-      alert("hola mundo");
+      //alert("hola mundo");
       window.appQlik.getObject(this.kpi.qlik).then(model => {
         window.appQlik.table(model).exportData({'format':'CSV_C','state':'A','filename': 'exportdata.csv','download': true});
       });
@@ -21,7 +21,7 @@ Vue.component('sidenav-component',{
     return{
       options:[
          {key:0,url:'/',tooltip:'Home',icon:'home'}
-        ,{key:1,url:'/Saldos',tooltip:'Saldos',icon:'attach_money'}
+        ,{key:1,url:'/Flujos',tooltip:'Fujos',icon:'attach_money'}
         ,{key:2,url:'',tooltip:'',icon:''}
         ,{key:3,url:'',tooltip:'',icon:''}
         ,{key:4,url:'',tooltip:'',icon:''}

@@ -32,7 +32,7 @@ require(["js/qlik"], function (qlik) {
 
 	//callbacks -- inserted here --
 	//open apps -- inserted here --
-	window.appQlik = qlik.openApp('Sales Discovery.qvf', config);
+	window.appQlik = qlik.openApp('Consumer Sales.qvf', config);
 
 	let evento = new Event("qlik-cargado");
 
