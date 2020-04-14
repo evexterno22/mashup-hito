@@ -104,10 +104,10 @@ let matrizComponent = {
     return{
       
       row1KPI: [
-        { key: 0, id: 'matrizKPI',size:'s12 m12 l12',qlik:'Btbd', title: 'Gráfica ejemplo 1',style:'kpi-s', download: true, titleBottom:''}
+        { key: 0, id: 'matrizKPI',size:'s12 m12 l12',qlik:'Btbd', title: 'Gráfica ejemplo 1',style:'kpi-l', download: true, titleBottom:''}
       ]
       ,row2KPI: [
-        { key: 1, id: 'matrizKPI',size:'s12 m12 l12',qlik:'Btbd', title: 'Gráfica ejemplo 2',style:'kpi-s' , download: true, titleBottom:''}
+        { key: 1, id: 'matrizKPI',size:'s12 m12 l12',qlik:'Btbd', title: 'Gráfica ejemplo 2',style:'kpi-l' , download: true, titleBottom:''}
       ]
       ,row3KPI: [
         { key: 2, id: 'matrizKPI',size:'s2 m2 l2',qlik:'Btbd', title: '',style:'kpi-xs-matriz' , download: false, titleBottom:''}

@@ -25,8 +25,8 @@ Vue.component('sidenav-component',{
         ,{key:2,url:'/Incumplimiento',tooltip:'Incumplimiento',icon:'assignment'}
         ,{key:3,url:'/Distribucion',tooltip:'Distribución',icon:'credit_card'}
         ,{key:4,url:'/Reporte',tooltip:'Reporte',icon:'business'}
-        ,{key:4,url:'/Matriz',tooltip:'Matriz',icon:'grid_on'}
-        ,{key:4,url:'/Links',tooltip:'Links',icon:'insert_link'}
+        ,{key:5,url:'/Matriz',tooltip:'Matriz',icon:'grid_on'}
+        ,{key:6,url:'/Links',tooltip:'Links',icon:'insert_link'}
       ]
     }
   }
