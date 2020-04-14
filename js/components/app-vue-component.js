@@ -1,5 +1,5 @@
 let headerComponent ={
-  template:'#header-component'
+  template:'#header-component',
 };
 let mainComponent={
   template:'#main-component'

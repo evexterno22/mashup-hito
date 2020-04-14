@@ -6,4 +6,7 @@ document.addEventListener('vue-cargado', function() {
   var instDropdown1=M.Dropdown.init(dropdown1);
   var instSidenav = M.Sidenav.init(sidenav, optSidenav);
   var instSidenav1 = M.Sidenav.init(sidenav1,{ edge: 'left' });
+
+  var tooltip=document.querySelectorAll('.tooltipped');
+    var instTooltip = M.Tooltip.init(tooltip, {});
 });

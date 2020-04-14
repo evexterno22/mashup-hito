@@ -103,25 +103,7 @@
 					<li><a href="#!">three</a></li>
 				  </ul>
 				  <!-- sidenav content here  -->
-				  <ul id="slide-out" class="sidenav sidenav-fixed">
-						<li>
-						  <div class="user-view">
-							<div class="background">
-							  <img src="img/hito-logo.png">
-							</div>
-							<a href="#user"><img class="circle" src="img/user.png"></a>
-							<a href="#name"><span class="black-text name">John Doe</span></a>
-							<a href="#email"><span class="black-text email">jdandturk@gmail.com</span></a>
-						  </div>
-						</li>
-						<li><div class="divider"></div></li>
-						<li><router-link to="/"><i class="material-icons">home</i> Home</router-link></li>
-						<li><router-link to="/saldos">Saldos </router-link></li>
-						<li><div class="divider"></div></li>
-						<li><a class="subheader">Más opciones...</a></li>
-						<li><a class="waves-effect" href="#!">Primer opción</a></li>
-						<li><a href="#"><i class="material-icons">exit_to_app</i>Salir</a></li>
-				  </ul>
+				  <sidenav-component></sidenav-component>
 				  <!--//-->
 				</header>
 			  </div>
@@ -184,11 +166,35 @@
 							<div v-bind:id="kpi.id+kpi.key" v-bind:class="'qvplaceholder '+kpi.style"></div>
 						</div>
 						<div class="card-action light-green">
-							<a v-on:click="download" class="btn-floating btn-large waves-effect waves-light grey darken-4"><i class="material-icons">file_download</i></a>
+							<a v-on:click="download" class="btn-floating btn waves-effect waves-light grey darken-4 pulse"><i class="material-icons">file_download</i></a>
 							<span>Puede ser un titulo o un filtro</span>							
 						</div>
 					</div>
 				</div>
+			</div>
+		</script>
+		<script type="text/x-template" id="sidenav-component">
+			<div>
+				<ul id="slide-out" class="sidenav sidenav-fixed">
+					<li>
+					  
+						<div class="background">
+						  <img src="img/logo-s.png">
+						</div>
+					</li>
+					<li><div class="divider"></div></li>
+
+					<li v-for="option in options" v-bind:key="option.key">
+						<router-link v-bind:to="option.url" class="tooltipped" data-position="right" v-bind:data-tooltip="option.tooltip">
+							<i class="small material-icons">{{option.icon}}</i>
+						</router-link>
+						<div class="divider"></div>
+					</li>
+			  	</ul>
+			</div>
+		</script>
+		<script type="text/x-template" id="dropdown-component">
+			<div>
 			</div>
 		</script>
 		<!--//-->

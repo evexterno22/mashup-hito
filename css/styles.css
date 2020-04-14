@@ -1,7 +1,7 @@
 /*verde hito #7ebe13*/
 
 header, main, footer {
-	padding-left: 300px;
+	padding-left: 100px;
 }
 
 @media only screen and (max-width : 992px) {
@@ -10,7 +10,13 @@ header, main, footer {
 	}
 }
 .background img {
-  width: 23em;
+  width: 8em;
+}
+.sidenav{
+	width: 100px;
+}
+i.small {
+    font-size: 3rem;
 }
 .kpi-xl{
 	height: 500px;
@@ -29,7 +35,7 @@ header, main, footer {
 }
 @media only screen and (min-width: 601px)
 main >.container, body>.page-footer>.container, .top-nav>.container, #index-banner>.container {
-    width: 100%;
+    width: 90%;
 }
 @media only screen and (min-width: 993px)
 .container {
@@ -41,8 +47,8 @@ main >.container, body>.page-footer>.container, .top-nav>.container, #index-bann
 }
 .container {
     margin: 0 auto;
-    max-width: 1280px;
-    width: 90%;
+    max-width: 1920px;
+    width: 95%;
 }
 /*
 .qvplaceholder, .qvobject {

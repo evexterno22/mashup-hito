@@ -1,4 +1,3 @@
-
 Vue.component('kpi-component',{
   props:['kpi'],
   template:'#kpi-component',
@@ -13,4 +12,22 @@ Vue.component('kpi-component',{
       });
     }
   }
+});
+
+
+Vue.component('sidenav-component',{
+  template:'#sidenav-component',
+  data: function(){
+    return{
+      options:[
+         {key:0,url:'/',tooltip:'Home',icon:'home'}
+        ,{key:1,url:'/Saldos',tooltip:'Saldos',icon:'attach_money'}
+        ,{key:2,url:'',tooltip:'',icon:''}
+        ,{key:3,url:'',tooltip:'',icon:''}
+        ,{key:4,url:'',tooltip:'',icon:''}
+      ]
+    }
+  }
+
+
 });
