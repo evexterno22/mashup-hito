@@ -2,7 +2,7 @@ Vue.component('kpi-component',{
   props:['kpi'],
   template:'#kpi-component',
   mounted() {
-    window.appQlik.getObject(this.kpi.id+this.kpi.key,this.kpi.qlik);
+    window.appQlik[this.kpi.keyApp].getObject(this.kpi.id+this.kpi.key,this.kpi.qlik);
   },
   methods:{
     download(){
