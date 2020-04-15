@@ -32,7 +32,7 @@ let flujosComponent = {
   data: function (){
     return{
       row1KPI: [
-        { key: 0, id: 'flujosKPI',size:'s12 m8 l8',keyApp:0,qlik:'Btbd', title: 'Gráfica ejemplo 1',style:'kpi-m' , download: true, titleBottom:''}
+        { key: 0, id: 'flujosKPI',size:'s12 m8 l8',keyApp:1,qlik:'SqDbku', title: 'Gráfica ejemplo 1',style:'kpi-m' , download: true, titleBottom:''}
       , { key: 1, id: 'flujosKPI',size:'s12 m4 l4',keyApp:0,qlik:'Btbd', title: 'Gráfica ejemplo 2',style:'kpi-m' , download: true, titleBottom:''}
       ]
       ,row2KPI: [
