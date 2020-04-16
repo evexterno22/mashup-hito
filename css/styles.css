@@ -88,6 +88,13 @@ nav .brand-logo {
 .kpi-in-row{
 	margin: 0px !important;
 }
+.card-action{
+	border-radius: 1em !important;
+}
+.card{
+	border-radius: 1em !important;
+}
+
 /*
 .qvplaceholder, .qvobject {
 height: 300px;
