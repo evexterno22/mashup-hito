@@ -10,7 +10,8 @@ header, main, footer {
 	}
 }
 .background img {
-  width: 8em;
+  width: 7.7em;
+  height: 6em;
 }
 .logo-nav{
 	width: 3.4em;
@@ -64,6 +65,14 @@ main >.container, body>.page-footer>.container, .top-nav>.container, #index-bann
 }
 .card .card-action {
 	padding: 5px 5px;
+}
+
+nav .brand-logo {
+    position: absolute;
+    color: #fff;
+    display: inline-block;
+    font-size: 1.6rem;
+    padding: 0;
 }
 /*
 .qvplaceholder, .qvobject {

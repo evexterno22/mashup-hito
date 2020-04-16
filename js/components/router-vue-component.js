@@ -14,15 +14,15 @@ let homeComponent = {
         { key: 0, id: 'homeKPI',size:'s6 m4 l3',keyApp:0,qlik:'NrHfp', title: 'Gráfica ejemplo 3',style:'kpi-xs', download: true, titleBottom:'Bottom',
           kpiIn:{
             row1KPIN:[{ key: 0, id: 'homeKPIN',size:'s3 m3 l3',keyApp:0,qlik:'NrHfp', title: '',style:'kpiin-xs', download: false, titleBottom:'Bottom'}
-            , { key: 1, id: 'homeKPIN',size:'s3 m3 l3',keyApp:0,qlik:'ajMAEu', title: '',style:'kpiin-xs', download: false, titleBottom:''}
-            , { key: 2, id: 'homeKPIN',size:'s3 m3 l3',keyApp:0,qlik:'MEAjCJ', title: '',style:'kpiin-xs', download: false, titleBottom:''}]
+                    , { key: 1, id: 'homeKPIN',size:'s3 m3 l3',keyApp:0,qlik:'ajMAEu', title: '',style:'kpiin-xs', download: false, titleBottom:''}
+                    , { key: 2, id: 'homeKPIN',size:'s3 m3 l3',keyApp:0,qlik:'MEAjCJ', title: '',style:'kpiin-xs', download: false, titleBottom:''}]
             }
         }
       , { key: 1, id: 'homeKPI',size:'s6 m4 l3',keyApp:0,qlik:'ajMAEu', title: 'Gráfica ejemplo 4',style:'kpi-xs', download: true, titleBottom:'',
             kpiIn:{
               row1KPIN:[{ key: 3, id: 'homeKPIN',size:'s3 m3 l3',keyApp:0,qlik:'NrHfp', title: '',style:'kpiin-xs', download: false, titleBottom:'Bottom'}
-              , { key: 4, id: 'homeKPIN',size:'s3 m3 l3',keyApp:0,qlik:'ajMAEu', title: '',style:'kpiin-xs', download: false, titleBottom:''}
-              , { key: 5, id: 'homeKPIN',size:'s3 m3 l3',keyApp:0,qlik:'MEAjCJ', title: '',style:'kpiin-xs', download: false, titleBottom:''}]
+                      , { key: 4, id: 'homeKPIN',size:'s3 m3 l3',keyApp:0,qlik:'ajMAEu', title: '',style:'kpiin-xs', download: false, titleBottom:''}
+                      , { key: 5, id: 'homeKPIN',size:'s3 m3 l3',keyApp:0,qlik:'MEAjCJ', title: '',style:'kpiin-xs', download: false, titleBottom:''}]
             }
         }
       , { key: 2, id: 'homeKPI',size:'s6 m4 l3',keyApp:0,qlik:'MEAjCJ', title: 'Gráfica ejemplo 5',style:'kpi-xs', download: true, titleBottom:'',
