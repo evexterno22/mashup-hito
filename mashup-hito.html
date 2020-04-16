@@ -84,7 +84,7 @@
 					  <div class="nav-wrapper grey darken-4">
 						<div class="row">
 						  <div class="col s12">
-							<a href="banorte.com.mx" class="brand-logo"><img class="logo-nav" src="img/banorte-logo.png"></a>
+							<a href="https://www.banorte.com" target="_blank" class="brand-logo"><img class="logo-nav" src="img/banorte-logo.png"></a>
 							<ul class="left ">
 								<!-- Sidenav trigger-->
 								<li><a href="#" data-target="slide-out" class="left sidenav-trigger hide-on-medium-and-up"><i class="material-icons">menu</i></a></li>
@@ -234,11 +234,32 @@
 					<div class="card grey lighten-5">					
 						<div class="card-content black-text">
 							<span class="card-title center">{{kpi.title}}</span>
+							<div v-if="kpi.kpiIn">
+								<div class="row">
+									<kpiin-component v-for="kpiin in kpi.kpiIn.row1KPIN" v-bind:kpiin="kpiin" v-bind:key="kpiin.key"></kpiin-component>
+								</div>
+							</div>
 							<div v-bind:id="kpi.id+kpi.key" v-bind:class="'qvplaceholder '+kpi.style"></div>
 						</div>
 						<div v-if="kpi.download" class="card-action light-green">
 							<a v-on:click="download" class="btn-floating btn waves-effect waves-light grey darken-4 pulse"><i class="material-icons">file_download</i></a>
 							<span>{{kpi.titleBottom}}</span>							
+						</div>
+					</div>
+				</div>
+			</div>
+		</script>
+		<script type="text/x-template" id="kpiin-component">
+			<div v-bind:id="kpiin.style">
+				<div v-bind:class="'col '+kpiin.size">
+					<div class="card grey lighten-5">					
+						<div class="card-content black-text">
+							<div v-bind:id="kpiin.id+kpiin.key" v-bind:class="'qvplaceholder '+kpiin.style"></div>
+							<span class="card-title center">{{kpiin.title}}</span>
+						</div>
+						<div v-if="kpiin.download" class="card-action light-green">
+							<a v-on:click="download" class="btn-floating btn waves-effect waves-light grey darken-4 pulse"><i class="material-icons">file_download</i></a>
+							<span>{{kpiin.titleBottom}}</span>							
 						</div>
 					</div>
 				</div>

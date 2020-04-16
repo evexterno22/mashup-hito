@@ -11,10 +11,34 @@ let homeComponent = {
   data: function () {
     return {
       row1KPI: [
-        { key: 0, id: 'homeKPI',size:'s6 m4 l3',keyApp:0,qlik:'NrHfp', title: 'Gráfica ejemplo 3',style:'kpi-xs', download: true, titleBottom:'Bottom'}
-      , { key: 1, id: 'homeKPI',size:'s6 m4 l3',keyApp:0,qlik:'ajMAEu', title: 'Gráfica ejemplo 4',style:'kpi-xs', download: true, titleBottom:''}
-      , { key: 2, id: 'homeKPI',size:'s6 m4 l3',keyApp:0,qlik:'MEAjCJ', title: 'Gráfica ejemplo 5',style:'kpi-xs', download: true, titleBottom:''}
-      , { key: 3, id: 'homeKPI',size:'s6 m4 l3',keyApp:0,qlik:'fNGRa', title: 'Gráfica ejemplo 6',style:'kpi-xs', download: true, titleBottom:''}
+        { key: 0, id: 'homeKPI',size:'s6 m4 l3',keyApp:0,qlik:'NrHfp', title: 'Gráfica ejemplo 3',style:'kpi-xs', download: true, titleBottom:'Bottom',
+          kpiIn:{
+            row1KPIN:[{ key: 0, id: 'homeKPIN',size:'s3 m3 l3',keyApp:0,qlik:'NrHfp', title: '',style:'kpiin-xs', download: false, titleBottom:'Bottom'}
+            , { key: 1, id: 'homeKPIN',size:'s3 m3 l3',keyApp:0,qlik:'ajMAEu', title: '',style:'kpiin-xs', download: false, titleBottom:''}
+            , { key: 2, id: 'homeKPIN',size:'s3 m3 l3',keyApp:0,qlik:'MEAjCJ', title: '',style:'kpiin-xs', download: false, titleBottom:''}]
+            }
+        }
+      , { key: 1, id: 'homeKPI',size:'s6 m4 l3',keyApp:0,qlik:'ajMAEu', title: 'Gráfica ejemplo 4',style:'kpi-xs', download: true, titleBottom:'',
+            kpiIn:{
+              row1KPIN:[{ key: 3, id: 'homeKPIN',size:'s3 m3 l3',keyApp:0,qlik:'NrHfp', title: '',style:'kpiin-xs', download: false, titleBottom:'Bottom'}
+              , { key: 4, id: 'homeKPIN',size:'s3 m3 l3',keyApp:0,qlik:'ajMAEu', title: '',style:'kpiin-xs', download: false, titleBottom:''}
+              , { key: 5, id: 'homeKPIN',size:'s3 m3 l3',keyApp:0,qlik:'MEAjCJ', title: '',style:'kpiin-xs', download: false, titleBottom:''}]
+            }
+        }
+      , { key: 2, id: 'homeKPI',size:'s6 m4 l3',keyApp:0,qlik:'MEAjCJ', title: 'Gráfica ejemplo 5',style:'kpi-xs', download: true, titleBottom:'',
+          kpiIn:{
+            row1KPIN:[{ key: 6, id: 'homeKPIN',size:'s3 m3 l3',keyApp:0,qlik:'NrHfp', title: '',style:'kpiin-xs', download: false, titleBottom:'Bottom'}
+                    , { key: 7, id: 'homeKPIN',size:'s3 m3 l3',keyApp:0,qlik:'ajMAEu', title: '',style:'kpiin-xs', download: false, titleBottom:''}
+                    , { key: 8, id: 'homeKPIN',size:'s3 m3 l3',keyApp:0,qlik:'MEAjCJ', title: '',style:'kpiin-xs', download: false, titleBottom:''}]
+          }
+        }
+      , { key: 3, id: 'homeKPI',size:'s6 m4 l3',keyApp:0,qlik:'fNGRa', title: 'Gráfica ejemplo 6',style:'kpi-xs', download: true, titleBottom:'',
+          kpiIn:{
+            row1KPIN:[{ key: 9, id: 'homeKPIN',size:'s3 m3 l3',keyApp:0,qlik:'NrHfp', title: '',style:'kpiin-xs', download: false, titleBottom:'Bottom'}
+                    , { key: 10, id: 'homeKPIN',size:'s3 m3 l3',keyApp:0,qlik:'ajMAEu', title: '',style:'kpiin-xs', download: false, titleBottom:''}
+                    , { key: 11, id: 'homeKPIN',size:'s3 m3 l3',keyApp:0,qlik:'MEAjCJ', title: '',style:'kpiin-xs', download: false, titleBottom:''}]
+          }
+        }
     ]
     ,row2KPI: [
       { key: 4, id: 'homeKPI',size:'s12 m6 l6',keyApp:0,qlik:'Btbd', title: '',style:'kpi-xs-home' , download: false, titleBottom:''}

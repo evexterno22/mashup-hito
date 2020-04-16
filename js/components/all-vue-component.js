@@ -14,6 +14,22 @@ Vue.component('kpi-component',{
   }
 });
 
+Vue.component('kpiin-component',{
+  props:['kpiin'],
+  template:'#kpiin-component',
+  mounted() {
+    window.appQlik[this.kpiin.keyApp].getObject(this.kpiin.id+this.kpiin.key,this.kpiin.qlik);
+  },
+  methods:{
+    download(){
+      //alert("hola mundo");
+      window.appQlik[this.kpiin.keyApp].getObject(this.kpiin.qlik).then(model => {
+        window.appQlik[this.kpiin.keyApp].table(model).exportData({'format':'CSV_C','state':'A','filename': 'exportdata.csv','download': true});
+      });
+    }
+  }
+});
+
 
 Vue.component('sidenav-component',{
   template:'#sidenav-component',
