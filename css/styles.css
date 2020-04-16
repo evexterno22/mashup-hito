@@ -13,6 +13,10 @@ header, main, footer {
   width: 7.7em;
   height: 6em;
 }
+.divider-infonavit{
+	background-color: rgba(0, 0, 0, 1); 
+	height:15px;
+}
 .logo-nav{
 	width: 3.4em;
 }
@@ -35,7 +39,7 @@ i.small {
 	height: 300px;
 }
 .kpi-xs{
-	height: 300px;
+	height: 200px;
 }
 .kpiin-xs{
 	height: 50px;
@@ -44,7 +48,7 @@ i.small {
 	height: 50px;
 }
 .kpi-xs-home{
-	height: 25px;
+	height: 50px;
 }
 @media only screen and (min-width: 601px)
 main >.container, body>.page-footer>.container, .top-nav>.container, #index-banner>.container {
@@ -73,6 +77,16 @@ nav .brand-logo {
     display: inline-block;
     font-size: 1.6rem;
     padding: 0;
+}
+.kpi-in-card{
+	padding: 0px !important;
+	margin: 0px !important;
+}
+.kpi-in-tittle{
+	font-size: 1rem !important;
+}
+.kpi-in-row{
+	margin: 0px !important;
 }
 /*
 .qvplaceholder, .qvobject {
