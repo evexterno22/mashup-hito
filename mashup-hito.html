@@ -236,7 +236,7 @@
 				<div v-bind:class="'col '+kpi.size">
 					<div class="card grey lighten-5">					
 						<div class="card-content black-text">
-							
+							<span class="card-title center">{{kpi.title}}</span>
 							<div v-if="kpi.kpiIn">
 								<div class="row kpi-in-row" v-if="kpi.kpiIn.row1KPIN">
 									<kpiin-component v-for="kpiin in kpi.kpiIn.row1KPIN" v-bind:kpiin="kpiin" v-bind:key="kpiin.key"></kpiin-component>
@@ -245,7 +245,7 @@
 									<kpiin-component v-for="kpiin in kpi.kpiIn.row2KPIN" v-bind:kpiin="kpiin" v-bind:key="kpiin.key"></kpiin-component>
 								</div>
 							</div>
-							<span class="card-title center">{{kpi.title}}</span>
+							
 							<div v-bind:id="kpi.id+kpi.key" v-bind:class="'qvplaceholder '+kpi.style"></div>
 						</div>
 						<div v-if="kpi.download" class="card-action light-green">

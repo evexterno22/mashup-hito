@@ -1,27 +1,36 @@
 /*verde hito #7ebe13*/
 
-header, main, footer {
-	padding-left: 100px;
-}
 
-@media only screen and (max-width : 992px) {
-	header, main, footer {
-		padding-left: 0;
-	}
-}
 .background img {
-  width: 7.7em;
+  width: 6.9em;
   height: 6em;
 }
 .divider-infonavit{
 	background-color: rgba(0, 0, 0, 1); 
 	height:15px;
 }
+.sidenav li>a {
+    color: rgba(0,0,0,0.87);
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 25px;
+}
+header, main, footer {
+	padding-left: 90px;
+}
+@media only screen and (max-width : 992px) {
+	header, main, footer {
+		padding-left: 0;
+	}
+}
 .logo-nav{
 	width: 3.4em;
 }
 .sidenav{
-	width: 100px;
+	width: 90px;
 }
 i.small {
     font-size: 3rem;
