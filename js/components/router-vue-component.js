@@ -11,8 +11,8 @@ let homeComponent = {
   data: function () {
     return {
       row1KPI: [
-        { key: 0, id: 'homeKPI',size:'s6 m4 l3',keyApp:0,qlik:'qamd', title: 'Créditos',style:'kpi-xs', download: true,
-          kpiIn:{
+        { key: 0, id: 'homeKPI',size:'s6 m4 l3',keyApp:0,qlik:'qamd', title: 'Créditos',style:'kpi-xs', download: false,
+         /* kpiIn:{
             row1KPIN:[
                       { key: 0, id: 'homeKPIN',icon:'fas fa-dollar-sign i-tiny',size:'s12 m12 l12',keyApp:0,qlik:'NrHfp', title: '',style:'kpiin-xs', download: false}
                     ]
@@ -21,10 +21,10 @@ let homeComponent = {
                     , { key: 2, id: 'homeKPIN',icon:'fas fa-dollar-sign i-tiny',size:'s6 m6 l6',keyApp:0,qlik:'ajMAEu', title: 'Año Anterior',style:'kpiin-xs', download: false}
 
                     ]
-            }
+            }*/
         }
-      , { key: 1, id: 'homeKPI',size:'s6 m4 l3',keyApp:0,qlik:'JcJvj', title: 'Capital',style:'kpi-xs', download: true,
-            kpiIn:{
+      , { key: 1, id: 'homeKPI',size:'s6 m4 l3',keyApp:0,qlik:'JcJvj', title: 'Capital',style:'kpi-xs', download: false,
+           /* kpiIn:{
               row1KPIN:[
                         { key: 3, id: 'homeKPIN',icon:'fas fa-dollar-sign i-tiny',size:'s12 m12 l12',keyApp:0,qlik:'NrHfp', title: '',style:'kpiin-xs', download: false}
                       ]
@@ -33,10 +33,10 @@ let homeComponent = {
                       , { key: 5, id: 'homeKPIN',icon:'fas fa-dollar-sign i-tiny',size:'s6 m6 l6',keyApp:0,qlik:'ajMAEu', title: 'Año Anterior',style:'kpiin-xs', download: false}
   
                       ]
-            }
+            }*/
         }
-      , { key: 2, id: 'homeKPI',size:'s6 m4 l3',keyApp:0,qlik:'WJYuPN', title: 'Interés',style:'kpi-xs', download: true,
-          kpiIn:{
+      , { key: 2, id: 'homeKPI',size:'s6 m4 l3',keyApp:0,qlik:'WJYuPN', title: 'Interés',style:'kpi-xs', download: false,
+          /*kpiIn:{
             row1KPIN:[
                       { key: 6, id: 'homeKPIN',icon:'fas fa-dollar-sign i-tiny',size:'s12 m12 l12',keyApp:0,qlik:'NrHfp', title: '',style:'kpiin-xs', download: false}
                     ]
@@ -45,10 +45,10 @@ let homeComponent = {
                     , { key: 8, id: 'homeKPIN',icon:'fas fa-dollar-sign i-tiny',size:'s6 m6 l6',keyApp:0,qlik:'ajMAEu', title: 'Año Anterior',style:'kpiin-xs', download: false}
 
                     ]
-          }
+          }*/
         }
-      , { key: 3, id: 'homeKPI',size:'s6 m4 l3',keyApp:0,qlik:'WJYuPN', title: 'Total',style:'kpi-xs', download: true,
-          kpiIn:{
+      , { key: 3, id: 'homeKPI',size:'s6 m4 l3',keyApp:0,qlik:'WJYuPN', title: 'Total',style:'kpi-xs', download: false,
+          /*kpiIn:{
             row1KPIN:[
                       { key: 9, id: 'homeKPIN',icon:'fas fa-dollar-sign i-tiny',size:'s12 m12 l12',keyApp:0,qlik:'NrHfp', title: '',style:'kpiin-xs', download: false}
                    
@@ -59,7 +59,7 @@ let homeComponent = {
 
                     ]
 
-          }
+          }*/
         }
     ]
     ,row2KPI: [
