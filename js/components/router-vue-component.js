@@ -136,6 +136,7 @@ let adjudicacionComponent = {
     }
   }
 };
+
 let distribucionComponent = {
   template: '#distribucion-component',
   data: function (){
