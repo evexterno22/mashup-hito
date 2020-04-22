@@ -1,6 +1,8 @@
 /*verde hito #7ebe13*/
 
 
+
+
 .background img {
   width: 3.8em;
   height: 4em;
@@ -16,10 +18,15 @@
     font-weight: 500;
     height: 48px;
     line-height: 48px;
-    padding: 0 3px;
+    padding: 0 14px;
 }
 header, main, footer {
 	padding-left: 50px;
+}
+footer{
+    min-height: 50px;
+    padding-bottom: 10px;
+    position: static;
 }
 @media only screen and (max-width : 992px) {
 	header, main, footer {
@@ -39,10 +46,25 @@ header, main, footer {
     font-size: 2.3rem !important;
 }
 .i-small{
-    font-size: 1.2rem !important;
+    font-size: 1.2rem!important;
 }
 .i-tiny{
     font-size: 1rem !important;
+}
+
+.i-social-media{
+    padding: 10px;
+}
+.i-social-media:hover{
+    color:#7EBE13 !important;
+    padding-left: 4px;
+}
+.a-footer{
+
+    color:#7EBE13 !important;
+}
+.p-footer{
+    font-size: 8px;
 }
 .kpi-xl{
 	height: 600px;
@@ -74,7 +96,7 @@ main >.container, body>.page-footer>.container, .top-nav>.container, #index-bann
 }
 @media only screen and (min-width: 993px)
 .container {
-    width: 70%;
+    width: 90%;
 }
 @media only screen and (min-width: 601px)
 .container {
@@ -82,7 +104,7 @@ main >.container, body>.page-footer>.container, .top-nav>.container, #index-bann
 }
 .container {
     margin: 0 auto;
-    max-width: 1920px;
+    max-width: 9000px;
     width: 95%;
 }
 .card .card-action {
@@ -111,6 +133,11 @@ nav .brand-logo {
 }
 .card{
 	border-radius: 1em !important;
+}
+.card .card-title {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 0px !important;
 }
 
 /*

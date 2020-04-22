@@ -32,6 +32,7 @@
 		<div id="mashup-vue" class="">
 			<header-component></header-component>
 			<main-component></main-component>
+			<footer-component></footer-component>
 
 			<!--
 			<main>
@@ -138,8 +139,29 @@
 		</script>
 		<script type="text/x-template" id="footer-component">
 			<div>
-				<footer>
-					<!--Error Popup-->
+				<footer class="blue-grey darken-3">
+					<div class="container blue-grey darken-3">
+						<div class="row"></div>
+						<div class="row">
+							<div class="col s12 center">
+								<a class="i-social-media white-text" href="https://twitter.com/Financiera_HiTo" target="_blank"> <i class="fab fa-twitter i-small"></i></a>								
+								<a class="i-social-media white-text" href="https://www.facebook.com/Financiera.HiTO" target="_blank"> <i class="fab fa-facebook-f i-small "></i></a>
+							</div>
+						</div>						
+						<div class="row div-footer">
+							<div class="col s12 center">
+								<p class="white-text p-footer">&copy; HITO 2020. TODOS LOS DERECHOS RESERVADOS. 
+									<a class="a-footer" href="https://www.hito.com.mx/aviso-privacidad/" target="_blank">AVISO DE PRIVACIDAD</a>. 
+									LAS CONDICIONES EXACTAS DEL MODELO HITO DEPENDEN DE DIVERSOS FACTORES. 
+									POR LO TANTO, TODO LO EXPRESADO EN ESTA PÁGINA NO REPRESENTA UNA OFERTA ESPECÍFICA Y SE COMUNICA EXCLUSIVAMENTE PARA ILUSTRAR EL MODELO HITO. 
+									TODA LA INFORMACIÓN CONTENIDA EN ESTE SITIO WEB PUEDE CAMBIAR SIN PREVIO AVISO.
+								</p>
+							</div>
+						</div>
+
+					</div>
+					<!--Error Popup
+					
 					<div id="popup">
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close" id="closePopup"><span aria-hidden="true">×</span></button>
 						<p id="popupText"></p>
@@ -269,8 +291,8 @@
 							
 							<div v-bind:id="kpi.id+kpi.key" v-bind:class="'qvplaceholder '+kpi.style"></div>
 						</div>
-						<div v-if="kpi.download" class="card-action light-green">
-							<a v-on:click="download" class="btn-floating btn waves-effect waves-light grey darken-4"><i class="fas fa-file-download i-small"></i></a>
+						<div v-if="kpi.download" class="card-action grey lighten-5">
+							<a v-on:click="download" class="btn-floating btn waves-effect waves-light blue-grey darken-3"><i class="fas fa-file-download i-tiny"></i></a>
 							<span>{{kpi.titleBottom}}</span>							
 						</div>
 					</div>
