@@ -23,6 +23,9 @@
 header, main, footer {
 	padding-left: 50px;
 }
+.header-list{
+    padding-right: 100px;
+}
 footer{
     min-height: 50px;
     padding-bottom: 10px;

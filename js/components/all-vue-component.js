@@ -50,3 +50,33 @@ Vue.component('sidenav-component',{
 
 
 });
+
+Vue.component('btn-float-component',{
+  template:'#btn-float-component',
+  data:function(){
+    return{}
+  },
+  methods:{
+     clearAll: function(){
+       
+      for(let i=0;window.appQlik.length;i++){
+        window.appQlik[i].clearAll();
+      }
+        
+
+    },
+    undo: function(){
+      
+      for(let i=0;window.appQlik.length;i++){
+        window.appQlik[i].back();
+      }
+      },
+    redo: function(){
+      
+      for(let i=0;window.appQlik.length;i++){
+        window.appQlik[i].forward();
+      }
+      }
+    }
+  
+});

@@ -70,6 +70,10 @@ let homeComponent = {
     , { key: 6, id: 'homeKPI',size:'s12 m6 l6', keyApp:0,qlik:'akDGX', title: 'Gráfica ejemplo 6', style:'kpi-m', download: true}
     ]
     }
+  },
+  mounted: function(){
+    var tooltip=document.querySelectorAll('.tooltipped');
+    var instTooltip = M.Tooltip.init(tooltip, {});
   }
 };
 
@@ -100,6 +104,10 @@ let flujosComponent = {
       ]
       
     }
+  },
+  mounted:function(){
+    var tooltip=document.querySelectorAll('.tooltipped');
+    var instTooltip = M.Tooltip.init(tooltip, {});
   }
 };
 
@@ -118,6 +126,10 @@ let incumplimientoComponent = {
       ]
 
     }
+  },
+  mounted:function(){
+    var tooltip=document.querySelectorAll('.tooltipped');
+    var instTooltip = M.Tooltip.init(tooltip, {});
   }
 };
 
@@ -134,6 +146,10 @@ let adjudicacionComponent = {
       ]
 
     }
+  },
+  mounted:function(){
+    var tooltip=document.querySelectorAll('.tooltipped');
+    var instTooltip = M.Tooltip.init(tooltip, {});
   }
 };
 
@@ -152,6 +168,10 @@ let distribucionComponent = {
       ]
 
     }
+  },
+  mounted:function(){
+    var tooltip=document.querySelectorAll('.tooltipped');
+    var instTooltip = M.Tooltip.init(tooltip, {});
   }
 };
 
@@ -163,6 +183,10 @@ let reporteComponent = {
         { key: 0, id: 'reporteKPI',size:'s12 m12 l12',keyApp:0,qlik:'Btbd', title: 'Gráfica ejemplo 1',style:'kpi-xl' , download: false}
       ]
     }
+  },
+  mounted:function(){
+    var tooltip=document.querySelectorAll('.tooltipped');
+    var instTooltip = M.Tooltip.init(tooltip, {});
   }
 };
 
@@ -186,6 +210,10 @@ let matrizComponent = {
       , { key: 5, id: 'matrizKPI',size:'s12 m6 l6',keyApp:0,qlik:'Btbd', title: 'Gráfica ejemplo 4',style:'kpi-s' , download: true}
       ]
     }
+  },
+  mounted:function(){
+    var tooltip=document.querySelectorAll('.tooltipped');
+    var instTooltip = M.Tooltip.init(tooltip, {});
   }
 };
 
@@ -194,6 +222,10 @@ let linksComponent = {
   data: function (){
     return{
     }
+  },
+  mounted:function(){
+    var tooltip=document.querySelectorAll('.tooltipped');
+    var instTooltip = M.Tooltip.init(tooltip, {});
   }
 };
 
