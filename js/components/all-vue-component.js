@@ -52,6 +52,7 @@ Vue.component('sidenav-component',{
 });
 
 Vue.component('btn-float-component',{
+  props:['modal'],
   template:'#btn-float-component',
   data:function(){
     return{}
@@ -76,7 +77,16 @@ Vue.component('btn-float-component',{
       for(let i=0;window.appQlik.length;i++){
         window.appQlik[i].forward();
       }
+      },
+      modalShow: function(){
+        window.appQlik[this.modal.keyApp].getObject(this.modal.id+this.modal.key,this.modal.qlik);
       }
     }
+    
   
+});
+
+Vue.component('modal-component',{
+  props:['modal'],
+  template:"#modal-component"
 });

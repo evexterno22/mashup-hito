@@ -30,6 +30,14 @@ footer{
     min-height: 50px;
     padding-bottom: 10px;
 }
+.modal.modal-fixed-footer {
+    padding: 0;
+    height: 80%;
+    top: 5%!important;
+}
+.modal {
+    max-height: 90%;
+}
 @media only screen and (max-width : 992px) {
 	header, main, footer {
 		padding-left: 0;
@@ -91,6 +99,9 @@ footer{
 }
 .kpi-xs-home{
 	height: 50px;
+}
+.kpi-l-modal{
+    height: 450px;
 }
 @media only screen and (min-width: 601px)
 main >.container, body>.page-footer>.container, .top-nav>.container, #index-banner>.container {
